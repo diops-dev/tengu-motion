@@ -185,6 +185,9 @@ h4, .h4 {
 /* ══════════════════════════════════════════════════════════════════════
    Navigation
    ══════════════════════════════════════════════════════════════════════ */
+/* La barre porte .on-ink pour ses couleurs, mais .on-ink impose overflow:hidden,
+   qui rognait le menu déroulant mobile (positionné à top:100%). On le rétablit. */
+.nav.on-ink { overflow: visible; }
 .nav {
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
   padding: 20px var(--gutter);
@@ -462,9 +465,63 @@ h4, .h4 {
 }
 .footer__bar nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
 
+
+/* ══════════════════════════════════════════════════════════════════════
+   Sélecteur de langue
+   ══════════════════════════════════════════════════════════════════════ */
+.langs { display: inline-flex; align-items: center; gap: 1px; margin-left: 8px; }
+.langs__a {
+  padding: 6px 9px; text-decoration: none;
+  font-size: 10px; font-weight: var(--fw-bold); letter-spacing: .18em;
+  text-transform: uppercase; color: var(--t-bamboo); line-height: 1;
+  border: 1px solid transparent;
+  transition: color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.langs__a:hover { color: var(--t-washi); border-color: var(--rule-on-dark); }
+/* La langue courante est marquée, pas cliquable en apparence. */
+.langs__a[aria-current="true"] {
+  color: var(--t-sumi); background: var(--t-bamboo); border-color: var(--t-bamboo);
+}
+@media (max-width: 860px) {
+  .langs { margin: 24px 0 0; gap: 6px; }
+  .langs__a { padding: 10px 14px; border-color: var(--rule-on-dark); }
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   Encart de prévalence sur les traductions des documents légaux
+   ══════════════════════════════════════════════════════════════════════ */
+.prevail {
+  margin: 0 0 20px;
+  padding: 16px 20px;
+  background: var(--bg-alt);
+  border-left: 2px solid var(--accent);
+  font-size: 12.5px; line-height: 1.7; color: var(--fg-2);
+}
+.prevail a { color: var(--t-ink); font-weight: var(--fw-bold); }
+
+/* Lien mis en avant dans une liste de définitions */
+.link-strong { color: var(--t-ink); font-weight: var(--fw-bold); text-decoration: none; }
+.link-strong:hover { color: var(--accent); }
+
+/* ══════════════════════════════════════════════════════════════════════
+   404 : rappel dans les autres langues (Pages ne sert que le 404 racine)
+   ══════════════════════════════════════════════════════════════════════ */
+.nf-alts {
+  margin-top: var(--s-7); padding-top: var(--s-5);
+  border-top: 1px solid var(--rule-on-dark);
+  display: grid; gap: 10px; max-width: 640px;
+}
+.nf-alt { margin: 0; font-size: 13px; color: var(--t-bambou-200); }
+.nf-alt a {
+  color: var(--t-bamboo); font-weight: var(--fw-bold);
+  text-underline-offset: 3px;
+}
+.nf-alt a:hover { color: var(--t-washi); }
+
 /* ─── Impression ─────────────────────────────────────────────────────── */
 @media print {
-  .nav, .footer__bar nav, .btn, .hero__plate, .contactblock form { display: none; }
+  .nav, .footer__bar nav, .btn, .hero__plate, .contactblock form,
+  .langs, .nf-alts { display: none; }
   body { background: #fff; color: #000; }
   .on-ink, .on-sumi { background: #fff !important; color: #000 !important; }
   .on-ink h1, .on-sumi h1, .on-ink h2, .on-sumi h2 { color: #000 !important; }
