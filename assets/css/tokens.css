@@ -1,0 +1,98 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   Tengu Motion & Drone — Design tokens
+   « La précision est un rituel. » · 精度は儀式である
+   Source : Tengu Drone Design System — ui_kits/motion/colors_and_type.css
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ─── Palette primaire (5 tokens, non négociables) ─────────────────── */
+  --t-ink:        #3C3489;  /* Encre de Nuit · primaire 60 %             */
+  --t-lacquer:    #9B2226;  /* Rouge Laque   · accent 6-15 % · le sceau  */
+  --t-bamboo:     #C4A882;  /* Bambou Doré   · chaud 10-15 %             */
+  --t-washi:      #F5F5F0;  /* Washi         · surface 50 %              */
+  --t-sumi:       #2D2D2D;  /* Sumi          · encre texte 4-5 %         */
+
+  /* ─── Teintes utilitaires ─────────────────────────────────────────── */
+  --t-ink-900:    #1F1A52;
+  --t-ink-800:    #2A256B;
+  --t-ink-500:    #5547B8;
+  --t-ink-100:    #D6D2EC;
+  --t-laque-900:  #6F1518;
+  --t-laque-500:  #C73E42;
+  --t-laque-300:  #E05A5E;  /* laque éclairci · RÉSERVÉ aux fonds ink/sumi :
+                               #9B2226 et #C73E42 n'atteignent pas 3:1 sur sumi. */
+  --t-bambou-200: #E2D4B7;
+  --t-washi-100:  #F4F4F7;
+  --t-mist:       #7B7591;  /* décoratif uniquement (< 4.5:1 sur blanc)  */
+  --t-mist-text:  #6B6580;  /* texte secondaire · 5.5:1 sur blanc · AA   */
+
+  /* ─── Sémantique ──────────────────────────────────────────────────── */
+  --bg:           #FFFFFF;
+  --bg-alt:       var(--t-washi-100);
+  --bg-inverse:   var(--t-ink);
+  --bg-sumi:      var(--t-sumi);
+
+  --fg:           var(--t-sumi);
+  --fg-2:         var(--t-mist-text);
+  --fg-on-dark:   var(--t-washi);
+  --fg-2-on-dark: var(--t-bambou-200);
+
+  --brand:        var(--t-ink);
+  --accent:       var(--t-lacquer);
+  --warm:         var(--t-bamboo);
+
+  --rule:         rgba(45, 45, 45, .16);
+  --rule-soft:    rgba(45, 45, 45, .08);
+  --rule-on-dark: rgba(245, 245, 240, .18);
+
+  /* ─── Typographie ─────────────────────────────────────────────────── */
+  --ff-display:  "Cormorant Garamond", "Noto Serif JP", "EB Garamond", Georgia, serif;
+  --ff-body:     "Lato", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --ff-jp-serif: "Noto Serif JP", "Yu Mincho", "ヒラギノ明朝", serif;
+  --ff-mono:     ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* Échelle fluide : min mobile → max desktop */
+  --fs-d1:      clamp(48px, 8.4vw, 96px);
+  --fs-d2:      clamp(38px, 6.4vw, 72px);
+  --fs-h1:      clamp(32px, 5vw, 56px);
+  --fs-h2:      clamp(26px, 3.4vw, 40px);
+  --fs-h3:      clamp(21px, 2.2vw, 28px);
+  --fs-lead:    clamp(17px, 1.6vw, 21px);
+  --fs-body:    16px;
+  --fs-body-sm: 14px;
+  --fs-meta:    13px;
+  --fs-caps:    11px;
+  --fs-mono:    12px;
+
+  --fw-light: 300;  --fw-reg: 400;  --fw-med: 500;  --fw-bold: 700;
+
+  --ls-tagline:  .42em;
+  --ls-eyebrow:  .38em;
+  --ls-caps:     .3em;
+  --ls-wordmark: .22em;
+
+  --lh-display: .95;
+  --lh-tight:  1.05;
+  --lh-snug:   1.3;
+  --lh-body:   1.7;
+
+  /* ─── Espacement (base 8) ─────────────────────────────────────────── */
+  --s-1: 4px;   --s-2: 8px;   --s-3: 12px;  --s-4: 16px;  --s-5: 24px;
+  --s-6: 32px;  --s-7: 48px;  --s-8: 64px;  --s-9: 96px;  --s-10: 128px;
+
+  /* ─── Rayons · bordures · ombres ──────────────────────────────────── */
+  --r-0: 0px;  --r-sm: 2px;  --r-md: 4px;  --r-pill: 999px;
+  --bw-hair: .5px;  --bw-rule: 1px;  --bw-strong: 2px;
+  --sh-card: 0 1px 3px rgba(45,45,45,.05), 0 8px 24px rgba(45,45,45,.04);
+  --sh-elev: 0 8px 32px rgba(31,26,82,.18);
+
+  /* ─── Mouvement ───────────────────────────────────────────────────── */
+  --ease-out: cubic-bezier(.2, .7, .3, 1);
+  --dur-fast: 150ms;  --dur-base: 240ms;  --dur-slow: 440ms;
+
+  /* ─── Mise en page ────────────────────────────────────────────────── */
+  --container: 1320px;
+  --gutter:    clamp(20px, 4vw, 56px);
+  --grid-unit: 80px;
+  --sidecol:   220px;   /* colonne d'eyebrow des sections deux colonnes   */
+}
