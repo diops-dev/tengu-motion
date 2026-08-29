@@ -1,39 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.tengumotion.com/</loc>
+    <loc>https://diops-dev.github.io/tengu-motion/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.tengumotion.com/services.html</loc>
+    <loc>https://diops-dev.github.io/tengu-motion/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/es/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/services.html"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.tengumotion.com/contact.html</loc>
+    <loc>https://diops-dev.github.io/tengu-motion/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/services.html"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.tengumotion.com/mentions-legales.html</loc>
+    <loc>https://diops-dev.github.io/tengu-motion/es/servicios.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/services.html"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.tengumotion.com/confidentialite.html</loc>
+    <loc>https://diops-dev.github.io/tengu-motion/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/contact.html"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.tengumotion.com/cgv.html</loc>
+    <loc>https://diops-dev.github.io/tengu-motion/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/contact.html"/>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/es/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/contact.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/mentions-legales.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/en/legal-notice.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/mentions-legales.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/es/aviso-legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/mentions-legales.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/confidentialite.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/en/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/confidentialite.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/es/privacidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/confidentialite.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/cgv.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/cgv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/cgv.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/cgv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/cgv.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://diops-dev.github.io/tengu-motion/es/condiciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diops-dev.github.io/tengu-motion/cgv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diops-dev.github.io/tengu-motion/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diops-dev.github.io/tengu-motion/es/condiciones.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diops-dev.github.io/tengu-motion/cgv.html"/>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>

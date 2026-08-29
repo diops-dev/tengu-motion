@@ -1,7 +1,7 @@
 # Tengu Motion &amp; Drone — site vitrine
 
-Site statique de **Tengu Motion &amp; Drone** — vidéo, vidéo par drone et photographie
-professionnelle en Île-de-France.
+Site statique **trilingue** de **Tengu Motion &amp; Drone** — vidéo, vidéo par drone et
+photographie professionnelle en Île-de-France. Français, anglais, espagnol.
 
 > « La précision est un rituel. » · 精度は儀式である
 
@@ -13,12 +13,65 @@ n'importe quel hébergeur statique.
 
 ## Sommaire
 
+- [Les trois langues](#les-trois-langues)
 - [Mise en ligne](#mise-en-ligne)
 - [Avant la première publication](#avant-la-première-publication)
 - [Structure](#structure)
 - [Modifier le contenu](#modifier-le-contenu)
 - [Système de design](#système-de-design)
 - [Développement local](#développement-local)
+
+---
+
+## Les trois langues
+
+| Langue | Racine | Exemple |
+|---|---|---|
+| Français (référence) | `/` | `/services.html` |
+| English | `/en/` | `/en/services.html` |
+| Español | `/es/` | `/es/servicios.html` |
+
+Les slugs sont **traduits** : `/es/servicios.html`, `/en/privacy-policy.html`. La
+correspondance est déclarée une seule fois, dans `SLUGS` (`tools/content.py`) — le
+sélecteur de langue, les balises `hreflang` et le `sitemap.xml` en découlent tous.
+
+**Pas de redirection automatique.** Le visiteur choisit via le sélecteur FR / EN / ES
+dans la navigation, qui pointe toujours vers *la même page* dans l'autre langue — pas
+vers l'accueil. Les moteurs de recherche sont guidés par les balises `hreflang`
+réciproques, avec le français en `x-default`.
+
+### Pages légales
+
+Les versions anglaise et espagnole sont des **traductions de courtoisie**. Chacune
+porte en tête un encart rappelant que seule la version française fait foi, avec un lien
+vers celle-ci. Les CGV restent régies par le droit français quelle que soit la langue
+consultée.
+
+### Page 404
+
+GitHub Pages ne sert que le `404.html` de la racine, quelle que soit l'URL demandée.
+La version française porte donc un rappel en anglais et en espagnol, pour ne laisser
+aucun visiteur sans porte de sortie. Les `404.html` des sous-dossiers existent pour un
+accès direct et pour les hébergeurs qui, eux, les servent.
+
+### Ajouter une quatrième langue
+
+1. Ajouter le code dans `LANGS` et `LANG_META` (`tools/content.py`).
+2. Ajouter la colonne correspondante dans `SLUGS`.
+3. Dupliquer et traduire les blocs `FAMILIES`, `INCLUDED`, `CONDITIONS`, `UI`,
+   `META`, `LEGAL`, `LD_DESC` et `LD_KNOWS`.
+4. `python3 tools/build.py`.
+
+Aucune modification de `build.py` n'est nécessaire. Un contrôle utile après coup :
+
+```bash
+python3 -c "
+import sys; sys.path.insert(0,'tools'); import content as C
+ref = set(C.UI['fr'])
+for l in C.LANGS:
+    manque = ref - set(C.UI[l])
+    print(l, 'OK' if not manque else manque)"
+```
 
 ---
 
@@ -65,7 +118,8 @@ Les mentions légales et la politique de confidentialité contiennent des champs
 n'échappe à la relecture : forme juridique, capital, adresse du siège, SIREN,
 RCS, TVA, responsable de la publication, médiateur de la consommation.
 
-Ils se corrigent dans `tools/build.py` (dictionnaire `LEGAL`), puis :
+Ils se corrigent dans `tools/content.py` (dictionnaire `LEGAL`) — **dans les trois
+langues**, les mêmes champs y figurent — puis :
 
 ```bash
 python3 tools/build.py
@@ -85,6 +139,9 @@ soumissions/mois).
 2. Dans `tools/build.py`, remplacez `VOTRE_ID` par cet identifiant.
 3. Régénérez : `python3 tools/build.py`.
 
+Le même formulaire sert les trois langues : `assets/js/site.js` ne contient **aucun
+texte**, il lit ses messages dans les attributs `data-*` posés par le générateur.
+
 **Tant que l'identifiant n'est pas renseigné**, `assets/js/site.js` bascule
 automatiquement sur un `mailto:` pré-rempli vers `video@tengumotion.com` :
 aucune demande n'est perdue, même sans configuration. Alternatives équivalentes
@@ -92,9 +149,15 @@ si vous préférez : Formspark, Basin, Web3Forms, ou un webhook Netlify Forms.
 
 ### 3. Le domaine dans les métadonnées
 
-`SITE["url"]` dans `tools/build.py` alimente les balises canoniques, Open Graph
-et le `sitemap.xml`. S'il ne s'agit pas de `https://www.tengumotion.com`,
-changez-le puis régénérez.
+`SITE["url"]` (dans `tools/content.py`) vaut aujourd'hui l'adresse réellement servie :
+
+```python
+"url": "https://diops-dev.github.io/tengu-motion",
+```
+
+Elle alimente les balises canoniques, les `hreflang`, l'Open Graph et le `sitemap.xml`.
+Le jour où `tengumotion.com` est branché, passez-la à `https://www.tengumotion.com` et
+régénérez — sinon les moteurs de recherche indexent un domaine qui ne répond pas.
 
 ---
 
@@ -102,24 +165,32 @@ changez-le puis régénérez.
 
 ```
 .
-├── index.html               Accueil : hero, 3 familles, production 8K, manifeste, devis
-├── services.html            Grille tarifaire 2026 · 14 prestations, inclus, conditions
+├── index.html               Accueil FR
+├── services.html            Grille tarifaire 2026 · 14 prestations
 ├── contact.html             Formulaire de devis et coordonnées
 ├── mentions-legales.html    ⚠ champs à compléter
 ├── confidentialite.html     ⚠ champs à compléter
 ├── cgv.html                 Conditions générales de vente
-├── 404.html                 Page d'erreur (servie automatiquement par Pages)
+├── 404.html                 Erreur — sert tout le site, rappel EN/ES inclus
+│
+├── en/                      index · services · contact · legal-notice
+│                            privacy-policy · terms · 404
+├── es/                      index · servicios · contacto · aviso-legal
+│                            privacidad · condiciones · 404
 │
 ├── assets/
-│   ├── css/tokens.css       Jetons du système de design (couleurs, type, espacement)
+│   ├── css/tokens.css       Jetons du design system
 │   ├── css/site.css         Composants et mise en page
-│   ├── js/site.js           Menu mobile, formulaire, année du copyright
+│   ├── js/site.js           Menu mobile, formulaire — sans texte en dur
 │   └── img/                 logo.svg · logo-invert.svg · favicon.svg · og-image.png
 │
-├── tools/build.py           Générateur des pages (facultatif — voir ci-dessous)
-├── sitemap.xml              Régénéré par build.py
+├── tools/
+│   ├── content.py           TOUT le contenu, dans les trois langues
+│   └── build.py             Gabarits et génération
+│
+├── sitemap.xml              18 URL, chacune déclarant ses trois variantes
 ├── robots.txt
-├── CNAME                    Domaine personnalisé
+├── CNAME                    Domaine personnalisé (voir ci-dessus)
 └── .github/workflows/deploy.yml
 ```
 
@@ -134,24 +205,32 @@ changez-le puis régénérez.
 Les pages sont lisibles et indentées. Pour un prix, un mot, une date : ouvrez le
 `.html`, modifiez, commitez. Rien d'autre à faire.
 
-Attention : la navigation, le pied de page et le bloc de devis sont dupliqués
-dans chaque page. Une modification de ces éléments doit être répercutée partout —
-c'est précisément ce que le générateur évite.
+Attention : la navigation, le pied de page et le bloc de devis sont dupliqués dans
+**21 pages**. Une modification de ces éléments devrait être répercutée partout — c'est
+précisément ce que le générateur évite. À ce volume, l'édition manuelle n'est plus
+raisonnable que pour une coquille isolée.
 
 ### Via `tools/build.py` (recommandé pour tout ce qui est partagé)
 
 Le script rassemble en un seul endroit ce qui apparaît sur plusieurs pages.
 Il ne nécessite que Python 3, sans aucune bibliothèque externe.
 
-| À modifier | Où, dans `build.py` |
+Tout le contenu vit dans **`tools/content.py`**, indexé par langue.
+
+| À modifier | Dictionnaire |
 |---|---|
-| Téléphone, email, domaine, zone | `SITE` |
+| Téléphone, email, URL du site | `SITE` |
 | Prestations, descriptions, prix | `FAMILIES` |
 | « Inclus dans chaque prestation » | `INCLUDED` |
 | Conditions commerciales | `CONDITIONS` |
+| Tous les libellés d'interface | `UI` |
+| Titres et descriptions SEO | `META` |
 | Mentions légales, RGPD, CGV | `LEGAL` |
-| Choix du menu déroulant du devis | `PRESTATION_OPTIONS` |
-| Liens de navigation | `NAV` |
+| Noms de fichiers par langue | `SLUGS` |
+
+Une modification de prix dans `FAMILIES["fr"]` **ne se propage pas** aux deux autres
+langues : les prix y sont répétés pour que chaque version reste relisible telle quelle.
+Pensez à modifier les trois.
 
 ```bash
 python3 tools/build.py     # réécrit les .html, le sitemap et robots.txt
@@ -214,7 +293,8 @@ python3 -m http.server 8000
 ### Points d'attention
 
 - Les chemins sont **relatifs** : le site fonctionne aussi bien à la racine d'un
-  domaine que dans un sous-dossier (`/tengu-motion/`).
+  domaine que dans un sous-dossier (`/tengu-motion/`), et les pages `/en/` et `/es/`
+  remontent d'un cran vers `assets/`.
 - Le JavaScript est **non bloquant** : sans lui, la navigation, tous les
   contenus et le formulaire (en `POST` classique) restent opérationnels.
 - Le site est **imprimable** : une feuille `@media print` masque la navigation
