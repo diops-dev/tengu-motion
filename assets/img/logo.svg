@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" aria-label="Tengu Drone — Ha-Uchiwa">
+  
+  <rect x="96" y="118" width="8" height="74" fill="#3C3489"></rect>
+  
+  <rect x="90" y="116" width="20" height="8" fill="#9B2226"></rect>
+  
+  <circle cx="100" cy="116" r="14" fill="#3C3489"></circle>
+  <circle cx="100" cy="116" r="6" fill="#C4A882"></circle>
+  
+  <g>
+    <g transform="rotate(-60 100 116)"><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489" opacity="0.82"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+    <g transform="rotate(-40 100 116)"><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489" opacity="0.88"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+    <g transform="rotate(-20 100 116)"><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489" opacity="0.94"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+    <g><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+    <g transform="rotate(20 100 116)"><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489" opacity="0.94"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+    <g transform="rotate(40 100 116)"><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489" opacity="0.88"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+    <g transform="rotate(60 100 116)"><path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" fill="#3C3489" opacity="0.82"></path><line x1="100" y1="116" x2="100" y2="28" stroke="#F5F5F0" stroke-width="1.2" opacity="0.55"></line></g>
+  </g>
+  
+  <circle cx="100" cy="116" r="3" fill="#9B2226"></circle>
+</svg>

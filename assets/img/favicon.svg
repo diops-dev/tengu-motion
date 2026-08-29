@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tengu Motion &amp; Drone">
+  <rect width="64" height="64" fill="#3C3489"/>
+  <g transform="translate(32 40) scale(0.235) translate(-100 -116)">
+    <rect x="96" y="118" width="8" height="74" fill="#F5F5F0"/>
+    <g fill="#F5F5F0">
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" opacity=".82" transform="rotate(-60 100 116)"/>
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" opacity=".88" transform="rotate(-40 100 116)"/>
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" opacity=".94" transform="rotate(-20 100 116)"/>
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z"/>
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" opacity=".94" transform="rotate(20 100 116)"/>
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" opacity=".88" transform="rotate(40 100 116)"/>
+      <path d="M 100 116 C 92 92, 88 62, 92 22 L 108 22 C 112 62, 108 92, 100 116 Z" opacity=".82" transform="rotate(60 100 116)"/>
+    </g>
+    <circle cx="100" cy="116" r="14" fill="#F5F5F0"/>
+    <circle cx="100" cy="116" r="6" fill="#C4A882"/>
+    <circle cx="100" cy="116" r="3" fill="#9B2226"/>
+  </g>
+</svg>
